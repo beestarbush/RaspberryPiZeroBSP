@@ -1,9 +1,12 @@
-[submodule "poky"]
-	path = poky
+[submodule "workdir/poky"]
+	path = workdir/poky
 	url = git://git.yoctoproject.org/poky
-[submodule "meta-openembedded"]
-	path = meta-openembedded
+	branch = scarthgap
+[submodule "workdir/meta-openembedded"]
+	path = workdir/meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
-[submodule "meta-raspberrypi"]
-	path = meta-raspberrypi
+	branch = scarthgap
+[submodule "workdir/meta-raspberrypi"]
+	path = workdir/meta-raspberrypi
 	url = git://git.yoctoproject.org/meta-raspberrypi
+	branch = scarthgap

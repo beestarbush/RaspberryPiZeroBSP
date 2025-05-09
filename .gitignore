@@ -1,0 +1,9 @@
+workdir/build/bitbake-cookerdaemon.log
+workdir/build/bitbake.lock
+workdir/build/cache/
+workdir/build/conf/conf-notes.txt
+workdir/build/conf/conf-summary.txt
+workdir/build/conf/templateconf.cfg
+workdir/build/downloads/
+workdir/build/sstate-cache/
+workdir/build/tmp/
