@@ -13,11 +13,28 @@ IMAGE_FSTYPES_raspberrypi0-wifi ?= "tar.bz2 rpi-sdimg"
 
 IMAGE_FEATURES += "ssh-server-dropbear"
 
+IMAGE_INSTALL:append = " \
+	qtbase-plugins \
+	qtdeclarative \
+	qtdeclarative-plugins \
+	qtdeclarative-qmlplugins \
+	qtvirtualkeyboard \
+	qtvirtualkeyboard-plugins \
+	qtvirtualkeyboard-qmlplugins \
+	qtmultimedia \
+	qtmultimedia-plugins \
+	qtmultimedia-qmlplugins \
+"
+
 # Additional packages
 IMAGE_INSTALL:append = " \
   linux-firmware-bcm43430 \
   bash \
-  "
+"
+
+IMAGE_INSTALL:append = " \
+	clockapp \
+"
 
 export IMAGE_BASENAME = "bee-image"
 
