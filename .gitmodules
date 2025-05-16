@@ -10,3 +10,7 @@
 	path = workdir/meta-raspberrypi
 	url = git://git.yoctoproject.org/meta-raspberrypi
 	branch = scarthgap
+[submodule "workdir/meta-qt6"]
+	path = workdir/meta-qt6
+	url = git://code.qt.io/yocto/meta-qt6.git
+	branch = 6.9.0
