@@ -30,6 +30,7 @@ IMAGE_INSTALL:append = " \
 IMAGE_INSTALL:append = " \
   linux-firmware-bcm43430 \
   bash \
+  wpa-supplicant \
 "
 
 IMAGE_INSTALL:append = " \
