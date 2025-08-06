@@ -24,13 +24,14 @@ IMAGE_INSTALL:append = " \
 	qtmultimedia \
 	qtmultimedia-plugins \
 	qtmultimedia-qmlplugins \
+	ttf-liberation-sans \
+	tzdata \
 "
 
 # Additional packages
 IMAGE_INSTALL:append = " \
   linux-firmware-bcm43430 \
   bash \
-  wpa-supplicant \
 "
 
 IMAGE_INSTALL:append = " \

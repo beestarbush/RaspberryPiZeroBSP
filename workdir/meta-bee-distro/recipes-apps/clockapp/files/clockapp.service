@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for starting the clock application.
+# No dependencies required
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/clockapp
+
+[Install]
+WantedBy=default.target
