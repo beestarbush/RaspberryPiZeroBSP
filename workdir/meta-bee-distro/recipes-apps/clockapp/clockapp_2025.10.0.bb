@@ -9,8 +9,8 @@ DEFAULT_PREFERENCE="-1"
 PVBASE := "${PV}"
 
 BRANCH_PATH = ""
-BRANCH = "${PVBASE}"
-TAG = "${PVBASE}"
+BRANCH = "2025.10"
+TAG = "2025.10.0"
 SRC_URI = "\
     git://github.com/beestarbush/ClockApp.git;branch=${BRANCH};tag=${TAG};protocol=https \
     file://clockapp.service \
