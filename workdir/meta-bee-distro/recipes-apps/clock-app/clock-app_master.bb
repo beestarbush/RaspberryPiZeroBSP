@@ -12,7 +12,7 @@ BRANCH_PATH = ""
 BRANCH = "${PVBASE}"
 TAG = "${PVBASE}"
 SRC_URI = "\
-    git://github.com/beestarbush/clock-app.git;branch=${BRANCH};tag=${TAG};protocol=https \
+    gitsm://github.com/beestarbush/clock-app.git;branch=${BRANCH};tag=${TAG};protocol=https \
     file://clock-app.service \
 "
 
@@ -95,4 +95,10 @@ EOF
 do_install:append () {
     install -d ${D}${systemd_unitdir}/system
     install -m 0644 ${WORKDIR}/clock-app.service ${D}${systemd_unitdir}/system
+
+    # ClockCommonLibraries (submodule) installs headers and CMake exports that
+    # are only needed at build time. Remove them to avoid installed-vs-shipped
+    # QA errors.
+    rm -rf ${D}${includedir}
+    rm -rf ${D}${libdir}/cmake
 }
