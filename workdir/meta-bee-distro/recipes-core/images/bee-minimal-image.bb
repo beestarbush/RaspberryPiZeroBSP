@@ -38,6 +38,15 @@ IMAGE_INSTALL:append = " \
   modprobe-blacklist \
   alsa-state \
   alsa-utils \
+  gstreamer1.0 \
+  gstreamer1.0-plugins-base-alsa \
+  gstreamer1.0-plugins-base-audioconvert \
+  gstreamer1.0-plugins-base-audioresample \
+  gstreamer1.0-plugins-base-videoconvertscale \
+  gstreamer1.0-plugins-base-volume \
+  gstreamer1.0-plugins-base-playback \
+  gstreamer1.0-plugins-base-typefindfunctions \
+  gstreamer1.0-plugins-good \
 "
 
 IMAGE_INSTALL:append = " \

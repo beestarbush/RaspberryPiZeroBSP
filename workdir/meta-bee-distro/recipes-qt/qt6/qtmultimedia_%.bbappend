@@ -1,7 +1,7 @@
-PACKAGECONFIG:append = "  qml pulseaudio"
+PACKAGECONFIG:append = " qml gstreamer"
 # Make sure that not needed entries are disabled: spatialaudio spatialaudio_quick3d
-# Remove gstreamer as it contains CVE's and is not needed to just play sounds
-PACKAGECONFIG:remove = "  spatialaudio spatialaudio_quick3d ffmpeg gstreamer"
+# Use gstreamer backend for QMediaPlayer in this profile.
+PACKAGECONFIG:remove = "  spatialaudio spatialaudio_quick3d ffmpeg"
 
 PTEST_ENABLED = "0"
 

@@ -11,10 +11,8 @@ DEFAULT_PREFERENCE = "-1"
 PVBASE := "${PV}"
 
 BRANCH_PATH = ""
-#BRANCH = "${PVBASE}"
-BRANCH = "cpp-migration"
-TAG = "${BRANCH}"
-#TAG = "${PVBASE}"
+BRANCH = "${PVBASE}"
+TAG = "${PVBASE}"
 SRC_URI = "\
     gitsm://github.com/beestarbush/clock-backend.git;branch=${BRANCH};tag=${TAG};protocol=https \
     file://clock-backend.service \
