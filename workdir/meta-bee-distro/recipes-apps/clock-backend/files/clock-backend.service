@@ -1,11 +1,15 @@
 [Unit]
 Description=Clock backend WebSocket/REST service
-After=network.target data-init.service
-Requires=data-init.service
+After=network.target data-init.service pipewire.service wireplumber.service
+Requires=data-init.service pipewire.service wireplumber.service
 
 [Service]
 Type=simple
 WorkingDirectory=/data/clock-backend
+Environment=HOME=/data/clock-backend
+Environment=XDG_CONFIG_HOME=/data/clock-backend/.config
+ExecStartPre=/bin/mkdir -p /data/clock-backend/.config/pulse
+Environment=GST_AUDIO_SINK=pipewiresink
 ExecStart=/usr/bin/clock-backend
 Restart=on-failure
 RestartSec=5

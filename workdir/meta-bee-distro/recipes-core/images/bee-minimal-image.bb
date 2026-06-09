@@ -36,7 +36,6 @@ IMAGE_INSTALL:append = " \
   linux-firmware-bcm43430 \
   bash \
   modprobe-blacklist \
-  alsa-state \
   alsa-utils \
   gstreamer1.0 \
   gstreamer1.0-plugins-base-alsa \
@@ -47,6 +46,11 @@ IMAGE_INSTALL:append = " \
   gstreamer1.0-plugins-base-playback \
   gstreamer1.0-plugins-base-typefindfunctions \
   gstreamer1.0-plugins-good \
+  gstreamer1.0-pipewire \
+  pipewire \
+  pipewire-alsa \
+  pipewire-tools \
+  wireplumber \
 "
 
 IMAGE_INSTALL:append = " \
